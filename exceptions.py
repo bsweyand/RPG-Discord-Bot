@@ -10,3 +10,8 @@ class AlreadyInBattleException(RuntimeError):
 class NotInBattleException(RuntimeError):
     def __init__(self, message):
         super.__init__(message)
+
+
+class BattleAlreadyStartedException(RuntimeError):
+    def __init__(self, message):
+        super.__init__(message)
